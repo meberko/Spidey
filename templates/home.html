@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Michael E. Berkowitz</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/css/uikit.min.css" />
+
+        <!-- UIkit JS -->
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.5/dist/js/uikit-icons.min.js"></script>
+    </head>
+    <body onload="load()">
+        <nav id="navbar" class="uk-animation-fade uk-navbar-container" uk-navbar uk-sticky="bottom: #offset">
+            <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li id="navbar-profile-pic">
+                        <a href="#hero">
+                            <img style="width: 50px; height: 50px; border-radius: 50%" src="{{url_for('static', filename='headshot.jpg')}}">
+                        </a>
+                    </li>
+                    <li id="navbar-about" class="uk-active"><a onclick="about_click()">About</a></li>
+                    <li id="navbar-projects"><a onclick="projects_click()">Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div id="hero" class="uk-background-cover uk-height-large uk-light uk-flex uk-flex-center uk-flex-middle" uk-parallax="bgy:-100" style="background-image: url(static/hero_transparent.png);">
+            <span style="opacity:100%">
+                <p id="name-text" class="uk-heading-medium uk-text-center">MICHAEL BERKOWITZ</p>
+                <p id="title-text" class="uk-text-large uk-text-center">SOFTWARE ENGINEER & PHYSICIST</p>
+                <ul class="uk-subnav uk-flex-center">
+                    <li uk-scrollspy="cls: uk-animation-slide-left; repeat: true" style="animation-duration: 1s">
+                        <a id="github-icon" href="https://www.github.com/meberko" uk-icon="icon: github; ratio: 3"></a>
+                    </li>
+                    <li uk-scrollspy="cls:uk-animation-slide-bottom; repeat: true" style="animation-duration: 1s">
+                        <a id="linkedin-icon" href="https://www.linkedin.com/in/michaelberkowitz" uk-icon="icon: linkedin; ratio: 3"></a>
+                    </li>
+                    <li uk-scrollspy="cls:uk-animation-slide-right; repeat: true" style="animation-duration: 1s">
+                        <a id="gmail-icon" href="mailto:m.e.berkowitz@gmail.com" uk-icon="icon: google; ratio: 3"></a>
+                    </li>
+                </ul>
+            </span>
+        </div>
+        <div id="about" uk-scrollspy="cls:uk-animation-scale-up; repeat: true">
+            <p class="uk-heading-large uk-text-center" style="animation-duration: 1s">About me!</p>
+        </div>
+        <div id="spacer" style="height: 1000px"></div>
+        <div id="projects" uk-scrollspy="cls: uk-animation-scale-up; repeat: true" style="animation-duration: 1s">
+            <p class="uk-heading-large uk-text-center"> About my projects!</p>
+        </div>
+    </body>
+    <footer>
+        <script src="{{url_for('static', filename='main.js')}}"></script>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='styles/style.css')}}"/>
+    </footer>
+</html>

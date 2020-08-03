@@ -1,0 +1,62 @@
+@font-face {
+    font-family: "caviar";
+    src: url('CaviarDreams.ttf')
+}
+
+@font-face {
+    font-family: "raleway";
+    src: url('Roboto-Regular.ttf')
+}
+
+@font-face {
+    font-family: "raleway";
+    src: url('Raleway.ttf')
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-bottom: 10000px
+}
+
+svg {
+    stroke: black;
+    stroke-width: 0.5px;
+}
+
+.headshot{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+#name-text {
+    color: black;
+    /* -webkit-text-stroke: 1.5px black; */
+    font-family: 'raleway';
+}
+
+
+#title-text {
+    color: black;
+    /*-webkit-text-stroke: 0.85px black;*/
+    font-family: 'raleway';
+}
+
+#hero {
+    height: 100vh;
+}
+
+#github-icon > svg {
+    stroke: #6e5494;
+}
+
+#linkedin-icon > svg {
+    stroke: #0077b5;
+}
+
+#gmail-icon > svg {
+    stroke: #dd4b39;
+}
