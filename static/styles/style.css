@@ -50,6 +50,22 @@ object * {
     font-size: 2rem;
 }
 
+.no-margin {
+    margin: 0px;
+}
+
+.hline {
+    background-color: white;
+    height: 1px;
+    width: 100%;
+    margin: 0px;
+}
+
+.caption-text {
+    font-family: arial;
+    font-size: 0.75rem;
+}
+
 #name-text {
     color: black;
     /* -webkit-text-stroke: 1.5px black; */
