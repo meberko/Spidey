@@ -1,4 +1,6 @@
-# Personal-Website
+# Spidey
+### Because it's my personal WEBsite
+#### (I'm so sorry)
 Python Flask version of my personal website. This is still in early development and is not the live version of the site.
 
 # Get started
