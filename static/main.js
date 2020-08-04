@@ -1,20 +1,22 @@
-console.log("testing 1... 2... ");
 var navbar_height = document.getElementById("navbar").offsetHeight;
 
 function load() {
     window.scrollTo({top: navbar_height, behavior: 'smooth'});
 }
 
-function about_click() {
-    var about_div = document.getElementById("about");
-    window.scrollTo({top: document.getElementById("about").offsetTop - navbar_height, behavior: 'smooth'});
-    document.getElementById("navbar-projects").classList.remove("uk-active");
-    document.getElementById("navbar-about").classList.add("uk-active")
-}
-
-function projects_click() {
-    var about_div = document.getElementById("projects");
-    window.scrollTo({top: document.getElementById("projects").offsetTop - navbar_height, behavior: 'smooth'});
-    document.getElementById("navbar-projects").classList.add("uk-active");
-    document.getElementById("navbar-about").classList.remove("uk-active");
+function navbar_click(e) {
+    var clicked_id = e.id;
+    var navbar_items = document.getElementsByClassName("navbar-item");
+    var section_name = e.id.split("-")[1];
+    for(var i=0; i<navbar_items.length; i++) {
+        var item = navbar_items.item(i);
+        if(item.id == clicked_id) {
+            item.classList.add("uk-active");
+        }
+        else {
+            item.classList.remove("uk-active");
+        }
+    }
+    if(section_name == "home") window.scrollTo({top: document.getElementById(section_name).offsetTop, behavior: 'smooth'});
+    else window.scrollTo({top: document.getElementById(section_name).offsetTop - navbar_height, behavior: 'smooth'});
 }
