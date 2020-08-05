@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "caviar";
+    src: url('CaviarDreams.ttf')
+}
+
+@font-face {
+    font-family: "raleway";
+    src: url('Roboto-Regular.ttf')
+}
+
+@font-face {
+    font-family: "raleway";
+    src: url('Raleway.ttf')
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    /*padding-bottom: 10000px;*/
+    background-color: #85D0CB;
+}
+
+a {
+    outline: 0;
+}
+
+svg {
+    stroke: white;
+    fill: white;
+    stroke-width: 0.5px;
+}
+
+h1,h2,h3,p {
+    font-family: 'raleway';
+    color: white;
+}
+
+object {
+    height:25px;
+    width: 25px;
+}
+
+object * {
+    stroke: white;
+    fill: white;
+}
+
+footer {
+    text-align: center;
+}
+
+.card-title {
+    font-size: 3rem;
+}
+.card-text {
+    font-size: 2rem;
+}
+
+.no-margin {
+    margin: 0px;
+}
+
+.hline {
+    background-color: white;
+    height: 1px;
+    width: 100%;
+    margin: 0px;
+}
+
+.caption-text {
+    font-family: arial;
+    font-size: 1rem;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+}
+
+.project-img {
+    border-radius: 10px;
+}
+
+.project-text {
+    font-size: 1.5rem;
+}
+
+#name-text {
+    color: black;
+    /* -webkit-text-stroke: 1.5px black; */
+    font-family: 'raleway';
+}
+
+#title-text {
+    color: black;
+    /*-webkit-text-stroke: 0.85px black;*/
+    font-family: 'raleway';
+}
+
+#home {
+    height: 100vh;
+}
+
+#github-icon > svg {
+    stroke: #6e5494;
+}
+
+#linkedin-icon > svg {
+    stroke: #0077b5;
+}
+
+#gmail-icon > svg {
+    stroke: #dd4b39;
+}
+
+#location-icon > svg {
+    stroke: #ffffff;
+}
+
+#about-card {
+    background-color: #e27d60;
+    box-shadow: 5px 5px 10px 5px;
+}
+
+#project-card {
+    background-color: #e27d60;
+    box-shadow: 5px 5px 10px 5px;
+}
