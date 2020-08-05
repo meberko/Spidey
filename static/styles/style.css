@@ -18,8 +18,12 @@ html {
 }
 
 body {
-    padding-bottom: 10000px;
+    /*padding-bottom: 10000px;*/
     background-color: #85D0CB;
+}
+
+a {
+    outline: 0;
 }
 
 svg {
@@ -43,6 +47,10 @@ object * {
     fill: white;
 }
 
+footer {
+    text-align: center;
+}
+
 .card-title {
     font-size: 3rem;
 }
@@ -63,7 +71,20 @@ object * {
 
 .caption-text {
     font-family: arial;
-    font-size: 0.75rem;
+    font-size: 1rem;
+}
+
+.skills {
+    display: flex;
+    align-items: center;
+}
+
+.project-img {
+    border-radius: 10px;
+}
+
+.project-text {
+    font-size: 1.5rem;
 }
 
 #name-text {
