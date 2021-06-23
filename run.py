@@ -6,7 +6,7 @@ app=Flask(__name__)
 def home():
     return render_template("home.html")
 
-@app.route("/sfgv")
+@app.route("/sfgv.html")
 def sfgv():
     return render_template("sfgv.html")
 
