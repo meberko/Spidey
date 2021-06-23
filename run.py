@@ -6,6 +6,11 @@ app=Flask(__name__)
 def home():
     return render_template("home.html")
 
+@app.route("/sfgv")
+def home():
+    return render_template("sfgv.html")
+
+
 @app.route("/favicon.ico")
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),
