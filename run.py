@@ -7,7 +7,7 @@ def home():
     return render_template("home.html")
 
 @app.route("/sfgv")
-def home():
+def sfgv():
     return render_template("sfgv.html")
 
 
